@@ -1,4 +1,4 @@
-public class Worker  extends  Employee{
+public class Worker extends Employee {
 
     public Worker(String name, double baseSalary) {
         super(name, baseSalary);
@@ -6,7 +6,6 @@ public class Worker  extends  Employee{
 
     @Override
     public final double getSalary() {
-        getBaseSalary();
-        return 0;
+        return getBaseSalary();
     }
 }

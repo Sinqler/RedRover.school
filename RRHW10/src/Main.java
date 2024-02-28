@@ -29,7 +29,7 @@ public class Main {
         Manager manager1 = new Manager("Kate", 10000, 3);
         Manager manager2 = new Manager("Ann", 10000, 4);
         Manager manager3 = new Manager("Tim", 10000, 5);
-        Manager manager4 = new Manager("Bill", 10000, 6);
+        Manager manager4 = new Manager("Bill", 30000, 6);
 
         Director director1 = new Director("Piter", 15000, 10);
         Director director2 = new Director("Jane", 25000, 20);
@@ -42,6 +42,7 @@ public class Main {
 
         Employee[] arrEmployee = new Employee[]{worker1, worker2, worker3, worker4, manager1,
             manager2, manager3, manager4, director1, director2};
+
 
         Employee tempEmployee = Utils.getEmployeeByName(arrEmployee, "Tim");
         System.out.println(

@@ -78,7 +78,8 @@ public class Utils {
     }
 
     public static double getMinBonus(BaseManager[] bm) {
-        double minBonus = Double.MAX_VALUE;
+
+        double minBonus = 999999.0;
         for (int i = 0; i < bm.length; i++) {
             if (minBonus > bm[i].getSalary() - bm[i].getBaseSalary()) {
                 minBonus = bm[i].getSalary() - bm[i].getBaseSalary();
@@ -89,7 +90,8 @@ public class Utils {
     }
 
     public static double getMaxBonus(BaseManager[] bm) {
-        double maxBonus = Double.MIN_VALUE;
+        //double maxBonus = Double.MIN_VALUE;
+        double maxBonus = 0.0;
         for (int i = 0; i < bm.length; i++) {
             if (maxBonus < bm[i].getSalary() - bm[i].getBaseSalary()) {
                 maxBonus = bm[i].getSalary() - bm[i].getBaseSalary();

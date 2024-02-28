@@ -1,5 +1,7 @@
 public final class Manager extends BaseManager {
 
+    final int c = 3;
+
 
     public Manager(String name, double baseSalary, int numberOfSubordinates) {
         super(name, baseSalary, numberOfSubordinates);
@@ -15,16 +17,21 @@ public final class Manager extends BaseManager {
 //    }
 
 
-
-
-
-
-    public double getSalary(){
-        final double coefficient = getBaseSalary() * (getNumberOfSubordinates() /100 *3);
-        if (getNumberOfSubordinates() > 0){
-            return getBaseSalary() + getBaseSalary() * coefficient;
+    //    public double getSalary() {
+//        final double coefficientM = getBaseSalary() * (getNumberOfSubordinates() / 100 * 3);
+//        if (getNumberOfSubordinates() > 0) {
+//            return getBaseSalary() + coefficientM;
+//        } else {
+//            return getBaseSalary();
+//        }
+//    }
+    public double getSalary() {
+        final double coefficientM = getBaseSalary() * (getNumberOfSubordinates() / 100.0 * c);
+        if (getNumberOfSubordinates() > 0) {
+            return getBaseSalary() + coefficientM;
         } else {
             return getBaseSalary();
         }
     }
+
 }
