@@ -1,4 +1,4 @@
-public class Director extends BaseManager{
+public final class Director extends BaseManager{
 
     public Director(String name, double baseSalary, int numberOfSubordinates) {
         super(name, baseSalary, numberOfSubordinates);

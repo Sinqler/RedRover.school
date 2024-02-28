@@ -1,4 +1,4 @@
-public class Employee {
+public abstract class Employee {
 
     private String name;
     private double baseSalary;
@@ -16,9 +16,7 @@ public class Employee {
         return baseSalary;
     }
 
-    public double  getSalary() {
-        return baseSalary;
-    }
+    public abstract double getSalary();
 
     public void setName(String name) {
         this.name = name;

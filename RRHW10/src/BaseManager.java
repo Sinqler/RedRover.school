@@ -1,4 +1,4 @@
-public class BaseManager extends Worker{
+public abstract class BaseManager extends Employee{
     private int numberOfSubordinates;
 
     public BaseManager(String name, double baseSalary, int numberOfSubordinates) {
