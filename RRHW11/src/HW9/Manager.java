@@ -1,7 +1,6 @@
 package HW9;
 
 import HW9.employes.BaseEmployee;
-import HW9.employes.Employee;
 
 public final class Manager extends BaseEmployee {
 
@@ -66,7 +65,8 @@ public final class Manager extends BaseEmployee {
 
     @Override
     public double getSalary(Month[] monthArray) {
-        double percentageForTheEmployees = super.getSalary(monthArray) * 0.01 * getCountOfEmployee();
+        double percentageForTheEmployees =
+            super.getSalary(monthArray) * 0.01 * getCountOfEmployee();
         return super.getSalary(monthArray) + percentageForTheEmployees;
     }
 }

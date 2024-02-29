@@ -1,11 +1,12 @@
 package HW9;
 
-public class Month {
+public final class Month {
+
     private MountEnum mountName;
     private int countOfDaysInMonth;
     private int countOfWorkingDaysInMonth;
 
-    public  Month (MountEnum mountName, int countOfDaysInMonth, int countOfWorkingDaysInMonth){
+    public Month(MountEnum mountName, int countOfDaysInMonth, int countOfWorkingDaysInMonth) {
         this.mountName = mountName;
         this.countOfDaysInMonth = countOfDaysInMonth;
         this.countOfWorkingDaysInMonth = countOfWorkingDaysInMonth;
@@ -23,8 +24,9 @@ public class Month {
         return countOfWorkingDaysInMonth;
     }
 }
-enum MountEnum{
-   January,
+
+enum MountEnum {
+    January,
     February,
     March,
     April,
