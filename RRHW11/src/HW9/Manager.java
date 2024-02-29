@@ -1,8 +1,9 @@
 package HW9;
 
+import HW9.employes.BaseEmployee;
 import HW9.employes.Employee;
 
-public class Manager extends Employee {
+public final class Manager extends BaseEmployee {
 
     private int countOfEmployee;
 

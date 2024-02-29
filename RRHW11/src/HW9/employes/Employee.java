@@ -2,57 +2,55 @@ package HW9.employes;
 
 import HW9.Month;
 
-public class Employee {
-    private String name;
-    private int age;
-    private char gender;
-    private int salaryPerDay;
+public final class Employee extends BaseEmployee {
+
 
     public Employee(String name, int age, char gender, int salaryPerDay) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.salaryPerDay = salaryPerDay;
+        super(name, age, gender, salaryPerDay);
     }
 
+    @Override
     public void setName(String name) {
-        this.name = name;
+        super.setName(name);
     }
 
+    @Override
     public void setAge(int age) {
-        this.age = age;
+        super.setAge(age);
     }
 
+    @Override
     public void setGender(char gender) {
-        this.gender = gender;
+        super.setGender(gender);
     }
 
+    @Override
     public void setSalaryPerDay(int salaryPerDay) {
-        this.salaryPerDay = salaryPerDay;
+        super.setSalaryPerDay(salaryPerDay);
     }
 
+    @Override
     public String getName() {
-        return name;
+        return super.getName();
     }
 
+    @Override
     public int getAge() {
-        return age;
+        return super.getAge();
     }
 
+    @Override
     public char getGender() {
-        return gender;
+        return super.getGender();
     }
 
+    @Override
     public int getSalaryPerDay() {
-        return salaryPerDay;
+        return super.getSalaryPerDay();
     }
 
-    public double getSalary(Month[] monthArray){
-        int salary = 0;
-        for (int i = 0; i < monthArray.length; i++) {
-            salary += monthArray[i].getCountOfWorkingDaysInMonth() * getSalaryPerDay();
-        }
-        return salary;
+    @Override
+    public double getSalary(Month[] monthArray) {
+        return super.getSalary(monthArray);
     }
-
 }
